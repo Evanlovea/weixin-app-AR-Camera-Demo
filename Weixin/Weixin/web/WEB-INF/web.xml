@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+        <servlet>
+            <servlet-name>weixinServlet</servlet-name>
+            <servlet-class>Wx.WeixinServlet</servlet-class>
+        </servlet>
+
+        <servlet-mapping>
+            <servlet-name>weixinServlet</servlet-name>
+            <url-pattern>/wx.do</url-pattern>
+        </servlet-mapping>
+
+        <servlet>
+            <servlet-name>weixinAddCard</servlet-name>
+            <servlet-class>Wx.WeixinAddCard</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>weixinAddCard</servlet-name>
+            <url-pattern>/addcard.do</url-pattern>
+        </servlet-mapping>
+
+        <servlet>
+            <servlet-name>weixinOpenId</servlet-name>
+            <servlet-class>util.AccessOpenId</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>weixinOpenId</servlet-name>
+            <url-pattern>/openid.do</url-pattern>
+        </servlet-mapping>
+
+        <servlet>
+            <servlet-name>weixinCode</servlet-name>
+            <servlet-class>util.AccessCode</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>weixinCode</servlet-name>
+            <url-pattern>/code.do</url-pattern>
+        </servlet-mapping>
+
+        <servlet>
+            <servlet-name>weixinCard</servlet-name>
+            <servlet-class>util.AccessCardId</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>weixinCard</servlet-name>
+            <url-pattern>/card.do</url-pattern>
+        </servlet-mapping>
+
+
+        <servlet>
+            <servlet-name>weixinAccess</servlet-name>
+            <servlet-class>util.AccessAddCard</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>weixinAccess</servlet-name>
+            <url-pattern>/success.do</url-pattern>
+        </servlet-mapping>
+
+        <servlet>
+            <servlet-name>weixinCodeList</servlet-name>
+            <servlet-class>util.AccessCodeList</servlet-class>
+        </servlet>
+        <servlet-mapping>
+            <servlet-name>weixinCodeList</servlet-name>
+            <url-pattern>/codelist.do</url-pattern>
+        </servlet-mapping>
+
+        <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+        </welcome-file-list>
+</web-app>
