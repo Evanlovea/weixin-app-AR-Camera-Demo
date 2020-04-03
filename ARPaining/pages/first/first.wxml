@@ -1,0 +1,21 @@
+<camera id="myCamera" class="camera" device-position="back" flash="auto" >
+<cover-view class="container">
+  <cover-view class="pause" bindtap="pause">
+    <cover-image class="background"    src="../images/xin.png" />
+  </cover-view> 
+    <cover-view class="time">确定</cover-view>
+    <cover-view class="enter" bindtap="onChangeShowState" >
+   
+    <cover-image class="img" src="../images/enter.png" />
+     
+    </cover-view>
+    <cover-view class="{{showView?         'bright789_view_show':'bright789_view_hide'}}">  
+   <cover-image class='show1' bindtap="show1" src='../images/xinqidian.png'></cover-image>
+   <cover-image class='show2' bindtap='show2' src='../images/tushuguan.png'></cover-image>
+   <cover-image class='show3'  bindtap='show3'  src='../images/xuexiao.png'></cover-image>
+</cover-view>  
+     
+  
+</cover-view>
+
+</camera>

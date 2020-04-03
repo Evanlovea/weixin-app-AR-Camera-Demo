@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="content">
+        <view class="img-list1">
+            <view class="ul">
+                <view class="li" wx:for="{{imgList}}" wx:for-item="item">
+                    <navigator url="{{item.navigator_url}}">
+                        <image src="{{item.url}}" mode="widthFix"></image>
+                        <text>{{item.text}}</text>
+                        <view class="bg"></view>
+                    </navigator>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,13 @@
+.listview {
+  margin-left: 15rpx;
+  margin-right: 15rpx; 
+  margin-top: 50rpx; 
+  border-radius: 40rpx;
+}
+.container{
+ background-color: lightgrey
+}
+.inviteCard{
+  width: 100%;
+  height: 1000rpx
+}

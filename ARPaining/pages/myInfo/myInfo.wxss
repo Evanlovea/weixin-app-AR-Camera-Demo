@@ -1,0 +1,78 @@
+/* 个人信息 */
+.userinfo {
+  background: #0097ff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/* 头像 */
+.userinfo-avatar {
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+  border-radius: 50%;
+}
+/* 名字 */
+.userinfo-nickname {
+  color: white;
+  font-size: 22px;
+}
+/* 按钮 */
+/* .listview {
+        margin-left: 15rpx;
+        margin-right: 15rpx; 
+        margin-top: 150rpx; 
+        border-radius: 40rpx;
+} */
+.list-item {
+  display: flex;
+  flex-direction: row;
+  height: 88rpx;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1rpx solid #E5E5E5;
+}
+
+.list-name {
+  margin-left: 32rpx;
+  line-height: 88rpx;
+  font-family: PingFang SC;
+  font-size: 34rpx;
+  color: #000;
+  
+}
+
+.list-icon {
+  margin-top: 30rpx;
+  margin-left: 538rpx;
+  width: 16rpx;
+  height: 26rpx;
+}
+
+.list-container {
+  margin-top: 98rpx;
+  width: 100%;
+}
+.container{
+  background-color: #DDDDDD;
+  /* opacity: 0.5; */
+  height: 1100rpx;
+  width: 100%
+}
+.demo_line_01{
+    /* padding: 0 20px 0;
+    margin: 20px 0;
+    line-height: 2px;
+    border-left: 200px solid red;
+    border-right: 200px solid red;
+    text-align: center; */
+    margin-top:10rpx;
+  height:1px;border:none;border-top:1px dashed #FFF;
+}
+.left-list-icon{
+  position: relative;
+  margin-top: 25rpx;
+  margin-left: 23rpx;
+  width: 32rpx;
+  height: 52rpx;
+}

@@ -1,0 +1,45 @@
+<import src="../template/template.wxml"/> 
+ <camera class='myCamera' id='myCamera' device-position='back' flash='auto'   > 
+  <cover-view class="controls">
+    <cover-view class="play" bindtap="play">
+      <cover-image class="img" src="{{path}}" />
+    </cover-view>
+    </cover-view>
+  
+
+       <canvas canvas-id="myCanvas" bindtouchstart="start" disable-scroll="true"
+  bindtouchmove="move" bindtouchend="end" class='canvas'>
+    
+ </canvas> 
+  
+
+ </camera> 
+
+    <view class='canvas_setting_view'>
+      <template wx:if="{{showBgSet}}"  is="bgset" data="{{...canvasBgData}}"/>
+      <template wx:elif="{{showPenSet}}"  is="penset" data="{{...penData}}"/>
+      <view wx:else class="canvas_setting_view_index">
+          <view class="setting_view_item" catchtap='openBgSet'>
+              <image class="setting_image_icon"  mode="scaleToFill" src="../../resources/icon/btn_bg.png"/>
+          </view>
+          <view class="setting_view_item_line" />
+          <view class="setting_view_item" catchtap='openPenSet'>
+              <image wx:if="{{isClear}}" class="setting_image_icon"  mode="scaleToFill" src="../../resources/icon/btn_pen_no.png"/>
+              <image wx:else class="setting_image_icon"  mode="scaleToFill" src="../../resources/icon/btn_pen.png"/>
+          </view>
+          <view class="setting_view_item_line" />
+          <!--b保存图片  -->
+          <view class="setting_view_item" bindtap='saveCanvas' >
+              <image class="setting_image_icon"  mode="scaleToFill" src="../../images/savephoto.png"/>
+              <!-- <image wx:else class="setting_image_icon"  mode="scaleToFill" src="../../resources/icon/btn_eraser_no.png"/> -->
+          </view>
+         
+          <view class="setting_view_item_line" />
+          <view class="setting_view_item" catchtap='clearAll'>
+              <image class="setting_image_icon"  mode="scaleToFill" src="../../resources/icon/btn_clear.png"/>
+          </view>
+          <view class="setting_view_item_line" />
+         
+      </view>
+    </view>
+   

@@ -1,0 +1,198 @@
+.canvas-wrap {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 150rpx);
+}
+
+.canvas-wrap .canvas-bg-img {
+    width: 100%;
+    height: 100%;
+}
+
+.canvas-wrap .my-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.white-bg {
+    background-color: #fff;
+}
+
+.black-bg {
+    background-color: #000;
+}
+
+.tools-bar {
+    width: 100%;
+    height: 150rpx;
+    background-color: rgba(150, 150, 150, 0.2);
+}
+
+.tools-bar .tools-item {
+    position: relative;
+    float: left;
+    width: 25%;
+    height: 100%;
+}
+
+.tools-bar .tools-item .color-state {
+    width: 30rpx;
+    height: 30rpx;
+    border-radius: 50%;
+    position: absolute;
+    top: 25rpx;
+    right: 35rpx;
+}
+
+.tools-item .sprite-icon {
+    position: relative;
+    display: block;
+    width: 100rpx;
+    height: 100rpx;
+    margin: 0 auto;
+    top: 24rpx;
+}
+
+.tools-item .pallet-icon {
+    background-position: 0 -392rpx;
+}
+
+.tools-item .line-icon {
+    background-position: -100rpx -392rpx;
+}
+
+.tools-item .eraser-icon {
+    background-position: -200rpx -392rpx;
+}
+
+.tools-item .save-icon {
+    background-position: -300rpx -392rpx;
+}
+
+.tools-item.active .pallet-icon {
+    background-position: -400rpx -392rpx;
+}
+
+.tools-item.active .line-icon {
+    background-position: -500rpx -392rpx;
+}
+
+.tools-item.active .eraser-icon {
+    background-position: -600rpx -392rpx;
+}
+
+.tools-item.active .save-icon {
+    background-position: -700rpx -392rpx;
+}
+
+.tools-bar.change-color-panel, .tools-bar.change-width-panel {
+    box-sizing: border-box;
+    padding: 20rpx 0;
+}
+
+.tools-bar .return-option {
+    float: left;
+    width: 110rpx;
+    height: 110rpx;
+    padding: 25rpx;
+    box-sizing: border-box;
+}
+
+.tools-bar .return-option .return-icon {
+    display: block;
+    width: 60rpx;
+    height: 60rpx;
+    background-position: 0 -496rpx;
+}
+
+.tools-bar .options-wrap {
+    width: calc(100% - 110rpx);
+    white-space: nowrap;
+    float: left;
+}
+
+.change-color-panel .panel-option, .change-width-panel .panel-option {
+    position: relative;
+    width: 70rpx;
+    height: 110rpx;
+    margin-right: 10px;
+    padding: 5rpx;
+    box-sizing: border-box;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.change-width-panel .panel-option::before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 80rpx;
+    background: #444;
+    transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+    left: 50%;
+    top: 10%;
+}
+
+.change-width-panel .width-option-1::before {
+    width: 1px;
+}
+
+.change-width-panel .width-option-2::before {
+    width: 2px;
+}
+
+.change-width-panel .width-option-3::before {
+    width: 3px;
+}
+
+.change-width-panel .width-option-4::before {
+    width: 4px;
+}
+
+.change-width-panel .width-option-5::before {
+    width: 5px;
+}
+
+.change-color-panel .panel-option.active,
+.change-width-panel  .panel-option.active {
+    border: 2px #999 solid;
+}
+
+/* .tools-pop {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+} */
+
+/* 
+.pop-panel {
+    width: 200rpx;
+    padding: 20rpx;
+    background-color: rgba(150, 150, 150, 0.4);
+    border-radius: 5px;
+    position: absolute;
+    bottom: 150rpx;
+} */
+
+/* 
+.pop-panel .panel-option {
+    width: 100%;
+    height: 40rpx;
+    margin-bottom: 20rpx;
+    padding: 5rpx;
+    box-sizing: border-box;
+} */
+
+/* .pop-panel .panel-option.active {
+    border: 2px #999 solid;
+}
+
+.change-color-pop .pop-panel {
+    left: 0;
+} */

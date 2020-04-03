@@ -1,0 +1,4 @@
+<!--pages/preview/preview.wxml-->
+<cover-view>
+<cover-image  src="{{src}}"></cover-image>
+</cover-view>

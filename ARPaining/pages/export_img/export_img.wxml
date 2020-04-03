@@ -1,0 +1,13 @@
+<!--pages/export_img/export_img.wxml-->
+<view class="container grid-bg">
+    <view class="img-wrap" style="width:{{imageWidth*0.9 }}px;height:{{imageHeight * 0.8}}px;margin:{{imageHeight * 0.03}}px {{imageWidth * 0.05}}px;padding:{{imageHeight * 0.04}}px {{imageWidth * 0.04}}px;">
+        <image wx:if="{{imageSrc}}" src="{{imageSrc}}" mode="aspectFit"></image>
+    </view>
+    <view wx:if="{{pageType == 'share'}}" class="btn-wrap">
+      <button class="btn sprite-icon create-icon" bindtap="createBoard"></button>
+    </view>
+    <view wx:else class="btn-wrap">
+      <button class="btn sprite-icon save-icon" bindtap="saveImage">保存图片</button>
+      <button class="btn sprite-icon share-icon" open-type="share">转发</button> 
+    </view>
+</view>

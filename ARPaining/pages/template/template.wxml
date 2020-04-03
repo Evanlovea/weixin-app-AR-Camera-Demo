@@ -1,0 +1,28 @@
+<template name="bgset">
+  <view class="bgsetting_view" >
+      <scroll-view class='setting_scroll_view'  scroll-x="true" >  
+        <!-- <view class="bgsetting_view_item" >
+            <image class="bgsetting_item_img"  mode="scaleToFill" src="../../resources/icon/bg_photo.png"  />
+        </view>   -->
+        <block wx:for="{{colors}}" wx:key="id">
+          <view class="bgsetting_view_item" style='background-color:{{item}}' data-color='{{item}}' catchtap='setBgColor'>
+            <!-- <image class='item_img_select'  mode="scaleToFill" src='../../resources/icon/selected.png'/> -->
+          </view>
+        </block>
+      </scroll-view>  
+  </view>
+</template>
+
+
+<template name="penset">
+<view class="pensetting_view" >
+    <view class="pensetting_view_linesetting" >
+        <slider bindchange="setPenSize"  color="#09BB07"  max="30" min="1"  step="1" value="{{penSize}}" />
+    </view>
+    <scroll-view class='pen_scroll_view'  scroll-x="true" >   
+      <block wx:for="{{colors}}" wx:key="id">
+        <view class="pen_line_bg_view_item" style='background-color:{{item}}' data-color='{{item}}' catchtap='setPenColor'/> 
+      </block>
+     </scroll-view> 
+</view>
+</template>

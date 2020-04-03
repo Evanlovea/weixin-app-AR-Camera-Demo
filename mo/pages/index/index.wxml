@@ -1,0 +1,12 @@
+<!--index.wxml-->
+<view class='container'>
+   <camera id='myCamera' class='myCamera' device-position="back" flash="off" >
+    <cover-image src='https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1678761496,1374097277&fm=11&gp=0.jpg' class='myimage'></cover-image>
+ 
+<map id="map" class='myMap' longitude="113.324520" latitude="23.099994" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>
+  </camera> 
+<!-- <map id="map" longitude="113.324520" latitude="23.099994" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;">
+<camera id='myCamera' class='myCamera' device-position="back" flash="off" > </camera>
+
+</map> -->
+</view>

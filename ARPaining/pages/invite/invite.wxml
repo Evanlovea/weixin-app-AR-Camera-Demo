@@ -1,0 +1,5 @@
+<view class='container'>
+<image src='https://wx3.sinaimg.cn/mw690/006hyGWCly1fnjspoxsb8j31kw2dcnpf.jpg' class='inviteCard'></image>
+<button class='listview' bindtap="savePic" type="primary">保存图片到相册</button>
+</view>
+

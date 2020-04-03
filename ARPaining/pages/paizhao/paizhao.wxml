@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<!-- camera.wxml -->
+<camera device-position="{{ position }}" flash="off" binderror="error" style="width: 100%; height: 1045rpx;">
+</camera>
+
+<view class="container">
+
+ <!-- <button type="primary" bindtap="takePhoto">拍照</button>  -->
+
+<view  class="menu_container">
+<!-- wx:for-index 指明后面如果要用数组索引的话，用什么名字，如果名字是 index，则可省略，直接使用  -->
+    <view  wx:key="this"  class="menu_item" wx:for="{{menus}}"    wx:for-item="menu" >
+  
+        <image bindtap='handleEvent' data-id="{{item.id}}" data-index="{{index}}" class="menu_icon" src="{{menu.url}}" />
+        <text class="menu_name">{{menu.name}}</text>
+    </view>
+    
+
+</view>
+
+</view>

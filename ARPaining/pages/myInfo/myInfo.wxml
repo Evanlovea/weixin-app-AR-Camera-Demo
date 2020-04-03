@@ -1,0 +1,17 @@
+<view class='container'>
+  <view class='userinfo'>
+  <image class="userinfo-avatar" src='{{userInfo.avatarUrl}}'></image>
+  <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <!--list  -->
+  <view class='demo_line_01'></view>
+  <view class="list-container">
+  <!-- <button class='listview'type="primary" bindtap="bindViewTap">生成邀请</button> -->
+   <view class="list-item" bindtap="bindViewTap">
+     <image class="left-list-icon" src="/images/invte.png"></image>
+    <text class="list-name">邀请卡</text>
+    <image class="list-icon" src="/images/nextPage.png"></image>
+  
+  </view>
+  </view>
+</view>

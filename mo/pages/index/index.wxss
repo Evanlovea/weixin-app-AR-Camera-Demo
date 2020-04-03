@@ -1,0 +1,12 @@
+.myCamera{
+  width: 720rpx;
+  height: 1000rpx;
+}
+.myimage{
+ width: 10%;
+ position: absolute;
+ top:20%;
+}
+.myMap{
+  opacity: 0.1
+}

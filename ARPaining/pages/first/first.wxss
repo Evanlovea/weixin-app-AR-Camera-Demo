@@ -1,0 +1,99 @@
+.container {
+ position: absolute;
+  height: 100%;
+  width: 100%;
+
+ 
+}
+/*动态显示或隐藏插件*/
+.bright789_view_hide{  
+ display: none;  
+}  
+.bright789_view_show{  
+   display: block;
+   width: 720rpx;
+   height: 1000rpx;
+
+} 
+.show1{
+ position: absolute;
+ width: 100rpx;
+ height: 100rpx;
+ top: 490rpx;
+ right: 550rpx;
+}
+.show2{
+ position: absolute;
+ width: 100rpx;
+ height: 100rpx;
+ top: 490rpx;
+ left: 550rpx;
+}
+.show3{
+ position: absolute;
+ width: 100rpx;
+ height: 100rpx;
+ top: 750rpx;
+ right: 325rpx;
+}
+
+.camera{
+  height: 1186rpx;
+  width:  750rpx;
+  margin: 20rpx 10rpx 10rpx 0 
+}
+
+.pause {
+   position: absolute;
+   bottom: 250rpx;
+   right: 25rpx;
+   width: 710rpx;
+   height: 720rpx；
+}
+.background{
+  width: 700rpx;
+  height: 600rpx;
+}
+.time {
+  text-align: center;
+  background-color: rgba(0, 0, 0, .5);
+  color: white;
+  line-height: 50rpx;
+  position: absolute;
+  bottom: 100rpx;
+  left: 300rpx; 
+  display: none; /*设置不显示该控件*/
+  height: 5%;
+  width: 20%
+  
+}
+.img {
+  width: 40px;
+  height: 40px;
+  margin: 5px auto;
+}
+.enter{
+  height: 85rpx;
+  width: 90rpx;
+  margin: 10rpx auto;
+  position: absolute;
+   bottom: 140rpx;
+   right: 339rpx;
+   background-color: lightgrey;
+   
+   opacity:0.4;
+   filter:alpha(opacity=40);
+
+}
+input{
+  border: 1px solid lightgrey;
+  width: 90%;
+  margin: 5%;
+  position: absolute;
+  top: 100rpx;
+   border-left:1px solid #fff; 
+  border-right:1px solid #fff; 
+}
+.img{
+  background-color: lightcyan
+}

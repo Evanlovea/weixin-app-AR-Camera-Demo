@@ -1,0 +1,93 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.1",
+	"appid": "wxfeb671d46a9754f1",
+	"projectname": "ARPaining",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "tuya",
+					"pathName": "pages/tuya/tuya",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "new_board",
+					"pathName": "pages/new_board/new_board",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "save",
+					"pathName": "pages/export_img/export_img",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "save1",
+					"pathName": "pages/saoma/saoma",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "two",
+					"pathName": "pages/two/two",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "youhui",
+					"pathName": "pages/youhui/youhui",
+					"query": ""
+				},
+				{
+					"id": 6,
+					"name": "quanjing",
+					"pathName": "pages/quanjing/quanjing",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "invite",
+					"pathName": "pages/invite/invite",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "bgtuya",
+					"pathName": "pages/bgtuya/bgtuya",
+					"query": ""
+				}
+			]
+		}
+	}
+}
